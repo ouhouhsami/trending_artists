@@ -1,0 +1,14 @@
+{% extends "admin/change_form.html" %}
+
+
+{% block content %}
+<div id="content-main">
+	<form action="." method="POST">
+		 {% csrf_token %}
+<table>
+{{ formset.as_table }}
+</table>
+<input type="submit" />
+</form>
+</div>
+{% endblock %}
