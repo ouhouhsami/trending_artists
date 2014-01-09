@@ -190,6 +190,6 @@ class FestivalAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Artist, ArtistAdmin)
-admin.site.register(Trend)
+#admin.site.register(Trend)
 admin.site.register(Festival, FestivalAdmin)
-admin.site.register(Concert)
+#admin.site.register(Concert)

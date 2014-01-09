@@ -1,6 +1,16 @@
 {% extends "admin/base.html" %}
+{% load i18n %}
 
 {% block extrahead %}
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js" type="text/javascript"></script>
     {% include 'autocomplete_light/static.html' %}
 {% endblock %}
+
+{% block title %}{{ title }} | {% trans 'Nuits de Champagne site admin' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'Nuits de Champagne' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
