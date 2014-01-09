@@ -1,6 +1,7 @@
 {% extends 'admin/change_form.html' %}
 
 {% block extrahead %}{{ block.super }}
+{% comment %}
 <style type="text/css">
 .demo-container {
   box-sizing: border-box;
@@ -40,6 +41,7 @@ $(function() {
 });
 
 </script>
+{% endcomment %}
 {% endblock %}
 
 
@@ -49,7 +51,9 @@ $(function() {
 <li>{{ song }}</li>
 {% endfor %}
 </ul>
+{% comment %}
 <div class="demo-container">
   <div id="placeholder" class="demo-placeholder"></div>
 </div>
+{% endcomment %}
 {% endblock %}
